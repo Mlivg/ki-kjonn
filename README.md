@@ -99,7 +99,7 @@ Files in `data/raw`, downloaded from [kiindeksen.no/data/openai_signals/](https:
 
 ## How this was made
 
-The pipeline was written with Claude Code. Every line was then reviewed by hand. The review changed one thing: Python's `round()` rounds 50.5 down to 50, so the script uses round-half-up instead. No result changed. The raw files were checked byte for byte against the live files on kiindeksen.no after the analysis.
+The pipeline was written with Claude Code. The review changed one thing: Python's `round()` rounds 50.5 down to 50, so the script uses round-half-up instead. No result changed. The raw files were checked byte for byte against the live files on kiindeksen.no after the analysis.
 
 ## Folder context
 
