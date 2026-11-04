@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KI-indeksen gender analyses</title>
+<meta name="description" content="Replications and analyses of the gender data behind kiindeksen.no/kjonn.html.">
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f9f9f7;
+    --surface: #fcfcfb;
+    --ink: #0b0b0b;
+    --ink-2: #52514e;
+    --muted: #6b6a66;
+    --border: rgba(11, 11, 11, 0.10);
+    --link: #1c5cab;
+    --good: #006300;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page: #0d0d0d;
+      --surface: #1a1a19;
+      --ink: #f0efec;
+      --ink-2: #c3c2b7;
+      --muted: #a3a29b;
+      --border: rgba(255, 255, 255, 0.10);
+      --link: #86b6ef;
+      --good: #0ca30c;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --ink: #f0efec;
+    --ink-2: #c3c2b7;
+    --muted: #a3a29b;
+    --border: rgba(255, 255, 255, 0.10);
+    --link: #86b6ef;
+    --good: #0ca30c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 8px; }
+  .lede { color: var(--ink-2); margin: 0 0 40px; }
+  h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 12px; }
+  a { color: var(--link); }
+  ol.analyses { list-style: none; margin: 0 0 48px; padding: 0; display: grid; gap: 12px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .meta { font-size: 0.85rem; color: var(--muted); margin: 0 0 4px; }
+  .card h3 { font-size: 1.15rem; margin: 0 0 8px; }
+  .card h3 a { color: var(--ink); text-decoration: none; }
+  .card h3 a:hover { text-decoration: underline; }
+  .card p { margin: 0 0 12px; color: var(--ink-2); }
+  .status { color: var(--good); font-weight: 600; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 0.95rem; }
+  footer { border-top: 1px solid var(--border); padding-top: 20px; font-size: 0.9rem; color: var(--ink-2); }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>KI-indeksen: gender and ChatGPT</h1>
+  <p class="lede">Replications and analyses of the open data behind
+    <a href="https://kiindeksen.no/kjonn.html">kiindeksen.no/kjonn.html</a>
+    ("Menn, kvinner og ChatGPT"). Each analysis is a script that reads the published files and can be rerun.</p>
+
+  <h2>Analyses</h2>
+  <ol class="analyses">
+    <li class="card">
+      <p class="meta">01 · 4 November 2026</p>
+      <h3><a href="https://github.com/Mlivg/ki-kjonn/blob/main/output/01_replicate_headline_notes.md">Replication of the headline numbers</a></h3>
+      <p><span class="status">All 13 numbers match.</span>
+        Expected share of work messages from women is 50.358&nbsp;%, observed is 50.364&nbsp;%.
+        The result depends on which topic weights are used, and topic gaps partly offset each other.</p>
+      <div class="links">
+        <a href="https://github.com/Mlivg/ki-kjonn/blob/main/output/01_replicate_headline_notes.md">Notes</a>
+        <a href="https://github.com/Mlivg/ki-kjonn/blob/main/output/01_replicate_headline.csv">Results table</a>
+        <a href="https://github.com/Mlivg/ki-kjonn/blob/main/scripts/01_replicate_headline.py">Script</a>
+      </div>
+    </li>
+    <!--
+      To add an analysis, copy the <li> block above, paste it here and change:
+      the number and date, the title, the one-line result, and the three links.
+    -->
+  </ol>
+
+  <footer>
+    <p>Code and data: <a href="https://github.com/Mlivg/ki-kjonn">github.com/Mlivg/ki-kjonn</a></p>
+    <p>Sources: OpenAI Signals v3.0 (CC BY 4.0), Statistics Norway table 12542, and the STYRK-08 link by Hernæs and Kostøl for
+      <a href="https://kiindeksen.no">KI-indeksen</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
