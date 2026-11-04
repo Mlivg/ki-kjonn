@@ -1,0 +1,14 @@
+number,page_pct,ours_pct,status,how
+women_share_employed,47,47.35,match,"SSB 12542, 2025, all codes incl. 0000 (unknown): 1360425 women, 1512432 men"
+expected_all,50,50.36,match,topics weighted by topic_share_work_openai
+observed_all,50,50.36,match,topics weighted by topic_share_work_openai
+expected_persons,50,50.36,match,"baseline persons, weighted by topic_share_work_openai"
+expected_relationships,51,50.78,match,"baseline relationships, weighted by topic_share_work_openai"
+expected_fte,49,49.38,match,"baseline fte, weighted by topic_share_work_openai"
+expected_writing,55,54.71,match,"Writing, expected column"
+observed_writing,57,56.69,match,"Writing, observed column"
+expected_technical,33,33.15,match,"Technical help, expected column"
+observed_technical,34,34.09,match,"Technical help, observed column"
+expected_multimedia,32,32.42,match,"Multimedia, expected column"
+observed_multimedia,46,46.01,match,"Multimedia, observed column"
+multimedia_share_of_work_messages,4,4.03,match,"Multimedia, share_of_work_messages (with topic_share_work_openai it is 5.9 %)"
