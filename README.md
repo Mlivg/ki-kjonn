@@ -1,20 +1,26 @@
 # ki-kjonn
 
-A replication of the headline numbers on [kiindeksen.no/kjonn.html](https://kiindeksen.no/kjonn.html) ("Menn, kvinner og ChatGPT", 3 November 2026). The page finds no gender gap in work use of ChatGPT in Norway. Women send 50 % of work messages, and their jobs imply 50 %. This repository rebuilds those numbers from the page's own CSV files and reports what matches and what does not.
+Two analyses of the numbers on [kiindeksen.no/kjonn.html](https://kiindeksen.no/kjonn.html) ("Menn, kvinner og ChatGPT", 3 November 2026). The page finds no gender gap in work use of ChatGPT in Norway. Women send 50 % of work messages, and their jobs imply 50 %. Analysis 01 rebuilds those numbers from the page's own CSV files and reports what matches and what does not. Analysis 02 asks a question the page leaves open: did women's share rise within topics, or did the topic mix shift?
+
+Website: [mlivg.github.io/ki-kjonn](https://mlivg.github.io/ki-kjonn/)
 
 ## Contents
 
 | Section | What it covers |
 |---|---|
-| [Result](#result) | The page's numbers against ours |
+| [Analysis 01: replication](#analysis-01-replication) | The page's numbers against ours |
+| [Result](#result) | All 13 numbers compared |
 | [Findings](#findings) | Small discrepancies and method choices |
 | [Not checked](#not-checked) | What the published files cannot answer |
-| [How to rerun](#how-to-rerun) | One command, no extra packages |
+| [Analysis 02: within topics or topic mix?](#analysis-02-within-topics-or-topic-mix) | What drove the rise in women's share over time |
+| [How to rerun](#how-to-rerun) | One command per analysis, no extra packages |
 | [Files](#files) | Every file in the repository |
 | [Data and licence](#data-and-licence) | Sources and terms |
-| [How this was made](#how-this-was-made) | Claude Code, checked line by line |
+| [How this was made](#how-this-was-made) | Claude Code and the checks that were run |
 
-## Result
+## Analysis 01: replication
+
+### Result
 
 All 13 numbers on the page round to the same whole percent in our calculation. At three decimals the expected share is 50.358 % and the observed share is 50.364 %.
 
@@ -31,7 +37,7 @@ All 13 numbers on the page round to the same whole percent in our calculation. A
 
 The full table is in [output/01_replicate_headline.csv](output/01_replicate_headline.csv).
 
-## Findings
+### Findings
 
 1. **The 50/50 depends on the topic weights.** The topics file has two weight columns. The page's result comes from `topic_share_work_openai`, the topic shares OpenAI reports. With `share_of_work_messages`, the shares implied by the activity key, expected is 49.18 % and observed is 49.36 %. The gap stays small with both.
 2. **The page uses both weights.** The 50 % uses OpenAI's topic shares. The statement that multimedia is 4 % of work messages uses the other column. With OpenAI's shares, multimedia is 5.9 %.
@@ -53,11 +59,31 @@ The full table is in [output/01_replicate_headline.csv](output/01_replicate_head
 
 Details and the reasoning behind each point are in [output/01_replicate_headline_notes.md](output/01_replicate_headline_notes.md).
 
-## Not checked
+### Not checked
 
 1. **Expected per topic from scratch.** The activity file has no topic column. The key from activity to topic is not among the published files, so the expected value for each topic cannot be rebuilt here.
 2. **An open gap.** Weighting each activity's women's share by its ChatGPT share gives 48.14 % expected, not 49.18 %. The topic key is needed to see why.
 3. **The `ratio` column** in the activity file. Its exact definition is not confirmed.
+
+## Analysis 02: within topics or topic mix?
+
+Women's share of ChatGPT messages rose from 35.1 % in July 2024 to 48.6 % in September 2026. Most of that rise happened within topics.
+
+On the first and last 3 months, the total rose 10.43 points. With the topic mix held fixed, four topics give a rise of 10.51 points. That leaves −0.07 points for the mix.
+
+| Topic | Weight | First 3 months | Last 3 months | Rise (points) |
+|---|---|---|---|---|
+| Technical help | 0.096 | 20.4 % | 34.5 % | 14.1 |
+| Practical guidance | 0.251 | 38.4 % | 52.0 % | 13.6 |
+| Seeking information | 0.133 | 32.1 % | 42.7 % | 10.6 |
+| Writing | 0.382 | 49.8 % | 57.3 % | 7.5 |
+| **All messages** | | **39.1 %** | **49.5 %** | **10.4** |
+
+The monthly topic mix is not published, so the mix effect is what remains and is not measured directly. Any fixed weights on these four topics give a rise between 7.5 and 14.1 points. Across all tests, the mix can explain at most 3.63 points under such weights.
+
+The result does not show why women's share rose. It could be more women using ChatGPT, or the same women sending more messages. Three topics with too few early values are left out of the main result.
+
+Method, tests and limits are in [output/02_shift_share_notes.md](output/02_shift_share_notes.md). The figure is [output/02_shift_share.svg](output/02_shift_share.svg).
 
 ## How to rerun
 
@@ -67,7 +93,11 @@ Python 3.9 or newer. No extra packages.
 python3 -I scripts/01_replicate_headline.py
 ```
 
-The script reads only `data/raw` and writes `output/01_replicate_headline.csv`. It prints the comparison table and the extra checks above.
+```bash
+python3 -I scripts/02_shift_share.py
+```
+
+Each script reads only `data/raw` and writes its results to `output/`. Each prints its main table and extra checks. The second script runs its tests on made-up data first, and stops if one fails.
 
 ## Files
 
@@ -76,6 +106,11 @@ The script reads only `data/raw` and writes `output/01_replicate_headline.csv`. 
 | [scripts/01_replicate_headline.py](scripts/01_replicate_headline.py) | The replication pipeline |
 | [output/01_replicate_headline.csv](output/01_replicate_headline.csv) | Page number, our number and status for each headline number |
 | [output/01_replicate_headline_notes.md](output/01_replicate_headline_notes.md) | Method choices, discrepancies and open questions |
+| [scripts/02_shift_share.py](scripts/02_shift_share.py) | The within-topic and topic-mix split, with its tests |
+| [output/02_shift_share.csv](output/02_shift_share.csv) | The main result and seven tests of its choices |
+| [output/02_shift_share.svg](output/02_shift_share.svg) | Figure of women's share by topic and in total |
+| [output/02_shift_share_notes.md](output/02_shift_share_notes.md) | Result, method, limits and what was not checked |
+| [index.html](index.html) | The website, listing the analyses |
 | `data/raw/` | The page's data files, unchanged (see below) |
 | [session-log.md](session-log.md) | What was done in each work session |
 | [AGENTS.md](AGENTS.md), [CLAUDE.md](CLAUDE.md) | Instructions for the coding agent |
@@ -99,7 +134,11 @@ Files in `data/raw`, downloaded from [kiindeksen.no/data/openai_signals/](https:
 
 ## How this was made
 
-The pipeline was written with Claude Code. The review changed one thing: Python's `round()` rounds 50.5 down to 50, so the script uses round-half-up instead. No result changed. The raw files were checked byte for byte against the live files on kiindeksen.no after the analysis.
+The scripts were written with Claude Code.
+
+In analysis 01, the review changed one thing: Python's `round()` rounds 50.5 down to 50, so the script uses round-half-up instead. No result changed. The raw files were checked byte for byte against the live files on kiindeksen.no after the analysis.
+
+In analysis 02, the tests on made-up data stopped eight of nine bugs planted on purpose. The ninth ignored the weights, so a new test now stops it too. A separate short script gave the same main result. A clean copy with only the script and `data/raw` gave byte-identical output.
 
 ## Folder context
 

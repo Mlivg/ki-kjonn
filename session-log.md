@@ -61,3 +61,49 @@
 - Task: move the project from the folder "KI index kjønn/" to the top of the repository.
 - Owner: chose to do it with git push.
 - Result: based the local repository on GitHub's commit afe89a7 and committed the move, with .gitignore. The owner pushes and logs in.
+
+- Task: check the repository after the owner moved the files by hand.
+- Owner: deleted the folder "KI index kjønn/" and uploaded the files to the top of the repository through the GitHub web page (commits 268ac71 and 07a960b, 2026-11-04 12:35 to 12:36). Chose this over git push.
+- Result: all 13 files are in the top folder, identical to the local files. kjonn.html is left out. All six local links in README.md resolve. A fresh clone reruns the script and gives an identical output table with no unmatched numbers. The local git repository now points to GitHub's commit 07a960b. The unpushed local commit 538111b is dropped, and no file contents changed. .gitignore exists only locally.
+
+- Task: a simple website for the repository, as a list of analyses.
+- Owner: asked for a very simple index page on github.io, with the replication as the first entry and room for later analyses.
+- Result: wrote index.html in the top folder. One card for analysis 01, with the result line and links to notes, results table and script on GitHub. An HTML comment shows how to add the next analysis. Checked in the browser pane at desktop and phone width, light and dark. No horizontal scroll. Not uploaded yet. GitHub Pages must be turned on by the owner (Settings, Pages, branch main, folder /root). Expected address: https://mlivg.github.io/ki-kjonn/ (not checked).
+
+- Task: check the live site.
+- Owner: uploaded index.html (commit 0f816e2, 2026-11-04 12:47) and asked for a check.
+- Result: index.html on GitHub is identical to the local file. https://mlivg.github.io/ki-kjonn/ returns 404. GitHub's API reports has_pages false, so Pages is not turned on yet. The three links in the page (notes, table, script) return 200. The owner also edited README.md on GitHub (commit 7d70dbe), so the local README.md is now older than GitHub's.
+
+- Task: check the site after GitHub Pages was turned on.
+- Owner: turned on GitHub Pages (branch main, root).
+- Result: https://mlivg.github.io/ki-kjonn/ returns 200. The live page is byte-identical to the local index.html. Opened in the browser pane. The links to notes, table and script point to the right files.
+
+- Task: sync the local folder with GitHub.
+- Owner: asked to sync.
+- Result: the local repository points to GitHub's latest commit (0f816e2). README.md now has the owner's edit from GitHub, which removes the sentence "Every line was then reviewed by hand." All other files match GitHub. Only session-log.md (newer entries) and .gitignore exist locally and are not on GitHub.
+
+## 2026-11-09
+
+- Task: analysis 02, split the rise in women's share of ChatGPT messages into a within-topic part and a topic-mix part, using only the files in data/raw.
+- Owner: set the question (catching up within topics or a shifting mix), rejected two earlier plans, chose existing data only, and approved the plan.
+- Result: wrote scripts/02_shift_share.py, output/02_shift_share.csv, output/02_shift_share.svg and output/02_shift_share_notes.md, and added card 02 to index.html. On the first and last 3 months the total rose 10.43 points. With a fixed mix, four topics give 10.51 points, leaving -0.07 for the mix. Across seven further tests the fixed-mix rise was 90.4 % to 108.5 % of the actual rise. Under any fixed weights on the four topics, the mix can explain at most 3.63 points. The monthly topic mix is not published, so the mix effect is not measured directly. Tests on made-up data pass and stopped five deliberate bugs. A separate recalculation of the main result and a clean-copy rerun matched. data/raw is unchanged. README.md is not updated. Nothing is uploaded to GitHub, so the new links on the card are not checked.
+
+- Task: add analysis 02 to README.md.
+- Owner: approved the update.
+- Result: README.md now covers both analyses, with a section for analysis 02, a second rerun command, new file rows and the checks run. Analysis 01's sections moved under one heading. The contents row "Claude Code, checked line by line" was replaced, because the owner had removed that claim from the body text and no joint line-by-line review has been done for analysis 02. Not uploaded to GitHub.
+
+- Task: go through scripts/02_shift_share.py line by line with the owner, part 1 of 4 (lines 1 to 100).
+- Owner: asked for the walkthrough.
+- Result: found one wrong comment on line 30. It said the other three topics have no values in the first three months, but Multimedia has one (September 2024). Corrected the comment. Rerun gave identical output files.
+
+- Task: line-by-line walkthrough with the owner, part 2 of 4 (the tests, lines 103 to 163).
+- Owner: asked to continue.
+- Result: the review found a weak test. No test checked that the weights change the result, because the first test has equal rises in every topic. A planted bug that ignored the weights got through. Added a test with unequal rises, which now stops that bug. Four other new bugs were also tried. Three were stopped, and one (nearest fill taking the other side) behaves the same as the original code, so it is not a real bug. Rerun gave identical output files. Updated the check lines in the notes and README.md.
+
+- Task: line-by-line walkthrough with the owner, part 3 of 4 (real data, the eight versions, the output table).
+- Owner: asked to continue.
+- Result: removed one check that could never fail (float() already stops on an empty total) and renamed the variable gaps to level_diff, because "gaps" means withheld months elsewhere in the script. Rerun gave identical output files.
+
+- Task: line-by-line walkthrough with the owner, part 4 of 4 (the figure code).
+- Owner: asked to continue.
+- Result: the vertical scales are set by hand, and nothing stopped a value from being drawn outside a panel. Added two checks. A deliberately narrow scale now stops the script. Output files are unchanged, and a clean copy gave identical output. The walkthrough of the script is finished. Nothing is uploaded to GitHub.
