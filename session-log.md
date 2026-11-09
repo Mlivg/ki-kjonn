@@ -40,31 +40,23 @@
 
 - Task: make an index for the GitHub repository github.com/Mlivg/ki-kjonn.
 - Owner: asked for an index for the repository.
-- Result: checked the repository. It has one commit with a README containing only the heading "ki-kjonn". The local folder is not a git repository yet. Rewrote README.md as the index: result table, six findings, not checked, how to rerun, file list, data and licence, how it was made, folder context. Numbers taken from a rerun of scripts/01_replicate_headline.py in this session. The professor is not named, since the name is not confirmed. Nothing pushed.
+- Result: checked the repository. It has one commit with a README containing only the heading "ki-kjonn". The local folder is not a git repository yet. Rewrote README.md as the index: result table, six findings, not checked, how to rerun, file list, data and licence, how it was made, folder context. Numbers taken from a rerun of scripts/01_replicate_headline.py in this session. The professor is not named, since the name is not confirmed.
 
 - Task: check the repository after the owner's upload.
 - Owner: uploaded files through the GitHub web page (commit ae9d7ed, 2026-11-04 12:03).
 - Result: the repository holds README.md, 01_replicate_headline.csv and 01_replicate_headline_notes.md, all byte-identical to the local files. They sit in the top folder, not in output/. The script, data/raw, session-log.md, AGENTS.md and CLAUDE.md are not uploaded. Six of the README's links therefore point to missing paths, and the rerun command cannot work. The README with the local path is now public.
 
-- Task: push the project to github.com/Mlivg/ki-kjonn with git.
-- Owner: asked to push with git.
-- Result: removed the local path from README.md. Added .gitignore (.DS_Store, data/raw/kjonn.html, __pycache__). Linked the folder to the repository on top of the owner's upload commit. The two result files moved from the top folder to output/. Added the script, data/raw (six files, unchanged), AGENTS.md, CLAUDE.md and this log. The old README with the local path stays in the history of commit ae9d7ed.
-
 - Task: check the repository after the owner's second upload.
-- Owner: chose to upload through the GitHub web page instead of git push (commit 117905e, 2026-11-04 12:16).
-- Result: the upload added 01_replicate_headline.py, identical to the local script, in the top folder. GitHub now has four files, all in the top folder. Still missing: output/, scripts/, data/raw, AGENTS.md, CLAUDE.md, session-log.md. The README on GitHub is the old version with the local path. The script cannot run from the top folder, because it looks for data/raw one level above itself. Local commit 915f686 is not pushed, and the local folder is not changed.
+- Owner: uploaded through the GitHub web page (commit 117905e, 2026-11-04 12:16).
+- Result: the upload added 01_replicate_headline.py, identical to the local script, in the top folder. GitHub now has four files, all in the top folder. Still missing: output/, scripts/, data/raw, AGENTS.md, CLAUDE.md, session-log.md. The README on GitHub is the old version with the local path. The script cannot run from the top folder, because it looks for data/raw one level above itself.
 
 - Task: check the repository after the owner's third upload.
 - Owner: deleted the four flat files and uploaded the project folder through the GitHub web page (commit afe89a7, 2026-11-04 12:25).
-- Result: all 13 files are on GitHub with the right structure, byte-identical to the local files. kjonn.html is left out. The README has no local path. A fresh clone runs the script and gives an identical output table. One problem: everything sits inside a folder "KI index kjønn/", so GitHub shows no README on the front page. .gitignore is not uploaded. Local commit 915f686 is not pushed and no longer matches GitHub.
-
-- Task: move the project from the folder "KI index kjønn/" to the top of the repository.
-- Owner: chose to do it with git push.
-- Result: based the local repository on GitHub's commit afe89a7 and committed the move, with .gitignore. The owner pushes and logs in.
+- Result: all 13 files are on GitHub with the right structure, byte-identical to the local files. kjonn.html is left out. The README has no local path. A fresh clone runs the script and gives an identical output table. One problem: everything sits inside a folder "KI index kjønn/", so GitHub shows no README on the front page. .gitignore is not uploaded.
 
 - Task: check the repository after the owner moved the files by hand.
-- Owner: deleted the folder "KI index kjønn/" and uploaded the files to the top of the repository through the GitHub web page (commits 268ac71 and 07a960b, 2026-11-04 12:35 to 12:36). Chose this over git push.
-- Result: all 13 files are in the top folder, identical to the local files. kjonn.html is left out. All six local links in README.md resolve. A fresh clone reruns the script and gives an identical output table with no unmatched numbers. The local git repository now points to GitHub's commit 07a960b. The unpushed local commit 538111b is dropped, and no file contents changed. .gitignore exists only locally.
+- Owner: deleted the folder "KI index kjønn/" and uploaded the files to the top of the repository through the GitHub web page (commits 268ac71 and 07a960b, 2026-11-04 12:35 to 12:36).
+- Result: all 13 files are in the top folder, identical to the local files. kjonn.html is left out. All six local links in README.md resolve. A fresh clone reruns the script and gives an identical output table with no unmatched numbers. The local git repository now points to GitHub's commit 07a960b. .gitignore exists only locally.
 
 - Task: a simple website for the repository, as a list of analyses.
 - Owner: asked for a very simple index page on github.io, with the replication as the first entry and room for later analyses.
@@ -107,3 +99,39 @@
 - Task: line-by-line walkthrough with the owner, part 4 of 4 (the figure code).
 - Owner: asked to continue.
 - Result: the vertical scales are set by hand, and nothing stopped a value from being drawn outside a panel. Added two checks. A deliberately narrow scale now stops the script. Output files are unchanged, and a clean copy gave identical output. The walkthrough of the script is finished. Nothing is uploaded to GitHub.
+
+- Task: check analysis 02 on GitHub and the live site.
+- Owner: uploaded the seven files through the GitHub web page in three commits (4c3d6de, 7b76017, e2531dd, 2026-11-09 15:12 to 15:13).
+- Result: a fresh clone has all files in the right folders, identical to the local files. kjonn.html stays off GitHub. Rerunning both scripts from the clone gave identical output tables and no unmatched numbers in analysis 01. The live page at https://mlivg.github.io/ki-kjonn/ shows card 02 and matches the local index.html. The card's four links return 200. This entry and .gitignore exist only locally. The local git repository still points to commit 0f816e2.
+
+- Task: remove the git push attempts from this log.
+- Owner: asked for this, because the attempts are irrelevant.
+- Result: removed two entries and the remarks about git push and unpushed commits in four other entries. No other entry changed.
+
+- Task: check whether OpenAI's Signals download fits four criteria for a new analysis of the topic mix.
+- Owner: asked to download data-download-csv.zip and data-dictionary.pdf and check them before doing anything more.
+- Result: both files are in a temporary folder outside the project. share_of_messages_by_topic_country_month.csv fits all four criteria: it has Norway (NO), is monthly, covers July 2024 to September 2026 with all 7 topics in all 27 months, and covers all messages, P(topic | month, country). All 149 topic values in data/raw/norway_gender_topics_monthly.csv and all 27 values of Alle equal OpenAI's feminine shares, so the 40 withheld topic cells remain. The dictionary says cells need an effective number of at least 100 messages, and that the data has differential privacy noise. No decomposition was run. No file was added to the project except this entry.
+
+- Task: save OpenAI's Signals download in the project.
+- Owner: approved saving all files in a separate folder.
+- Result: data/raw_openai_signals/ holds the 25 files from https://cdn.openai.com/signals/data-download-csv.zip, downloaded 2026-11-09: 24 CSV files and README.pdf, which is the data dictionary. All are byte-identical to the zip. SHA-256 of the zip: 04ab1a32e509aa75fd150f0d21c4d126305cc84018fc01a02a097088eaff6ef6. data/raw is unchanged. Not uploaded to GitHub. No analysis run.
+
+- Task: analysis 03, split the rise in women's share with OpenAI's measured monthly topic mix.
+- Owner: approved the plan and chose to build it.
+- Result: wrote scripts/03_measured_mix.py, output/03_measured_mix.csv, output/03_measured_mix_topics.csv, output/03_measured_mix.svg and output/03_measured_mix_notes.md. Added card 03 to index.html and a section to README.md. The fit check passed: the rebuilt total differs from Alle by 0.26 points on average in the 6 complete months (limit 1 point, set before the first run). From the first to the last 3 months the total rose 10.43 points: +10.56 within topics, -0.74 from the mix, +0.61 not explained. Writing fell from 34.7 % to 17.5 % of messages. Across the tests of the choices the mix stays between -1.06 and +0.57 points. An extreme start of 100 % for three thin topics would reverse the result, but the rebuilt start would then be 6.05 points above the published total. Analysis 02's conclusion holds, and its note and card were not changed. Tests stopped all ten planted bugs. A separate recalculation and a clean-copy rerun matched. Both data folders are unchanged. Not uploaded. The owner has not yet gone through this script line by line.
+
+- Task: line-by-line walkthrough of scripts/03_measured_mix.py with the owner, part 1 of 4 (setup, method, tests).
+- Owner: asked for the walkthrough.
+- Result: replaced one test that compared decimals exactly, which could fail on a rounding difference in the last digit. Rerun gave identical output files.
+
+- Task: line-by-line walkthrough of scripts/03_measured_mix.py with the owner, part 2 of 4 (real data and fit check).
+- Owner: asked to continue.
+- Result: two gaps found. The script checked the topic shares against OpenAI but not the total, so it now also stops if Alle differs from OpenAI's total. The fit check also hid a possible drift: the rebuilt total goes from above to below the published total. Added a printout with gaps filled: +0.18 points in the first 9 months, -0.01 in the middle 9, -0.36 in the last 9. This is about the size of the "not explained" part, and the cause is not checked. Added this to the note's limits. Results and output files are unchanged.
+
+- Task: line-by-line walkthrough of scripts/03_measured_mix.py with the owner, part 3 of 4 (the versions and output).
+- Owner: asked to continue.
+- Result: no code changed. Noted that window averages of topic shares and women's shares are taken separately, which may add to the "not explained" part. Noted that Multimedia's end value rests on September 2026 alone. A hand calculation shows that offsetting start errors of 20 points in Self-expression and Other/Unknown move the within part by about 0.23 points.
+
+- Task: line-by-line walkthrough of scripts/03_measured_mix.py with the owner, part 4 of 4 (the figure code).
+- Owner: asked to continue.
+- Result: the end labels rely on the lines being listed from highest to lowest end value, and nothing checked this. Added a check. Output files are unchanged. On the finished script the tests stopped all ten planted bugs, a clean copy gave identical output, and both data folders are unchanged. The walkthrough is finished. Nothing is uploaded to GitHub.
