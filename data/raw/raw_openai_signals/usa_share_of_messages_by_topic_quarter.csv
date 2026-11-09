@@ -1,0 +1,50 @@
+quarter,country,topic,share_of_messages
+2025-01-01,US,Multimedia,0.035
+2025-01-01,US,Other/Unknown,0.033
+2025-01-01,US,Practical Guidance,0.298
+2025-01-01,US,Seeking information,0.190
+2025-01-01,US,Self-expression,0.059
+2025-01-01,US,Technical help,0.100
+2025-01-01,US,Writing,0.285
+2025-04-01,US,Multimedia,0.063
+2025-04-01,US,Other/Unknown,0.040
+2025-04-01,US,Practical Guidance,0.288
+2025-04-01,US,Seeking information,0.185
+2025-04-01,US,Self-expression,0.081
+2025-04-01,US,Technical help,0.074
+2025-04-01,US,Writing,0.269
+2025-07-01,US,Multimedia,0.060
+2025-07-01,US,Other/Unknown,0.045
+2025-07-01,US,Practical Guidance,0.286
+2025-07-01,US,Seeking information,0.206
+2025-07-01,US,Self-expression,0.082
+2025-07-01,US,Technical help,0.060
+2025-07-01,US,Writing,0.261
+2025-10-01,US,Multimedia,0.056
+2025-10-01,US,Other/Unknown,0.043
+2025-10-01,US,Practical Guidance,0.306
+2025-10-01,US,Seeking information,0.199
+2025-10-01,US,Self-expression,0.078
+2025-10-01,US,Technical help,0.061
+2025-10-01,US,Writing,0.256
+2026-01-01,US,Multimedia,0.056
+2026-01-01,US,Other/Unknown,0.047
+2026-01-01,US,Practical Guidance,0.332
+2026-01-01,US,Seeking information,0.190
+2026-01-01,US,Self-expression,0.085
+2026-01-01,US,Technical help,0.049
+2026-01-01,US,Writing,0.241
+2026-04-01,US,Multimedia,0.066
+2026-04-01,US,Other/Unknown,0.052
+2026-04-01,US,Practical Guidance,0.323
+2026-04-01,US,Seeking information,0.202
+2026-04-01,US,Self-expression,0.083
+2026-04-01,US,Technical help,0.043
+2026-04-01,US,Writing,0.232
+2026-07-01,US,Multimedia,0.074
+2026-07-01,US,Other/Unknown,0.063
+2026-07-01,US,Practical Guidance,0.305
+2026-07-01,US,Seeking information,0.209
+2026-07-01,US,Self-expression,0.095
+2026-07-01,US,Technical help,0.042
+2026-07-01,US,Writing,0.211
