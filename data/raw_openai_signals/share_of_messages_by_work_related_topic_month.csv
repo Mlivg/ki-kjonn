@@ -1,0 +1,379 @@
+month,work_related,topic,share_of_messages
+2024-07-01,0,Multimedia,0.560
+2024-07-01,0,Other/Unknown,0.680
+2024-07-01,0,Practical Guidance,0.560
+2024-07-01,0,Seeking information,0.669
+2024-07-01,0,Self-expression,0.913
+2024-07-01,0,Technical help,0.212
+2024-07-01,0,Writing,0.369
+2024-07-01,1,Multimedia,0.440
+2024-07-01,1,Other/Unknown,0.320
+2024-07-01,1,Practical Guidance,0.440
+2024-07-01,1,Seeking information,0.331
+2024-07-01,1,Self-expression,0.087
+2024-07-01,1,Technical help,0.788
+2024-07-01,1,Writing,0.631
+2024-08-01,0,Multimedia,0.591
+2024-08-01,0,Other/Unknown,0.707
+2024-08-01,0,Practical Guidance,0.586
+2024-08-01,0,Seeking information,0.690
+2024-08-01,0,Self-expression,0.922
+2024-08-01,0,Technical help,0.237
+2024-08-01,0,Writing,0.396
+2024-08-01,1,Multimedia,0.409
+2024-08-01,1,Other/Unknown,0.293
+2024-08-01,1,Practical Guidance,0.414
+2024-08-01,1,Seeking information,0.310
+2024-08-01,1,Self-expression,0.078
+2024-08-01,1,Technical help,0.763
+2024-08-01,1,Writing,0.604
+2024-09-01,0,Multimedia,0.589
+2024-09-01,0,Other/Unknown,0.701
+2024-09-01,0,Practical Guidance,0.603
+2024-09-01,0,Seeking information,0.689
+2024-09-01,0,Self-expression,0.913
+2024-09-01,0,Technical help,0.297
+2024-09-01,0,Writing,0.408
+2024-09-01,1,Multimedia,0.411
+2024-09-01,1,Other/Unknown,0.299
+2024-09-01,1,Practical Guidance,0.397
+2024-09-01,1,Seeking information,0.311
+2024-09-01,1,Self-expression,0.087
+2024-09-01,1,Technical help,0.703
+2024-09-01,1,Writing,0.592
+2024-10-01,0,Multimedia,0.600
+2024-10-01,0,Other/Unknown,0.714
+2024-10-01,0,Practical Guidance,0.607
+2024-10-01,0,Seeking information,0.693
+2024-10-01,0,Self-expression,0.920
+2024-10-01,0,Technical help,0.305
+2024-10-01,0,Writing,0.422
+2024-10-01,1,Multimedia,0.400
+2024-10-01,1,Other/Unknown,0.286
+2024-10-01,1,Practical Guidance,0.393
+2024-10-01,1,Seeking information,0.307
+2024-10-01,1,Self-expression,0.080
+2024-10-01,1,Technical help,0.695
+2024-10-01,1,Writing,0.578
+2024-11-01,0,Multimedia,0.619
+2024-11-01,0,Other/Unknown,0.732
+2024-11-01,0,Practical Guidance,0.622
+2024-11-01,0,Seeking information,0.708
+2024-11-01,0,Self-expression,0.931
+2024-11-01,0,Technical help,0.314
+2024-11-01,0,Writing,0.436
+2024-11-01,1,Multimedia,0.381
+2024-11-01,1,Other/Unknown,0.268
+2024-11-01,1,Practical Guidance,0.378
+2024-11-01,1,Seeking information,0.292
+2024-11-01,1,Self-expression,0.069
+2024-11-01,1,Technical help,0.686
+2024-11-01,1,Writing,0.564
+2024-12-01,0,Multimedia,0.628
+2024-12-01,0,Other/Unknown,0.761
+2024-12-01,0,Practical Guidance,0.648
+2024-12-01,0,Seeking information,0.740
+2024-12-01,0,Self-expression,0.946
+2024-12-01,0,Technical help,0.304
+2024-12-01,0,Writing,0.468
+2024-12-01,1,Multimedia,0.372
+2024-12-01,1,Other/Unknown,0.239
+2024-12-01,1,Practical Guidance,0.352
+2024-12-01,1,Seeking information,0.260
+2024-12-01,1,Self-expression,0.054
+2024-12-01,1,Technical help,0.696
+2024-12-01,1,Writing,0.532
+2025-01-01,0,Multimedia,0.626
+2025-01-01,0,Other/Unknown,0.749
+2025-01-01,0,Practical Guidance,0.649
+2025-01-01,0,Seeking information,0.743
+2025-01-01,0,Self-expression,0.934
+2025-01-01,0,Technical help,0.319
+2025-01-01,0,Writing,0.458
+2025-01-01,1,Multimedia,0.374
+2025-01-01,1,Other/Unknown,0.251
+2025-01-01,1,Practical Guidance,0.351
+2025-01-01,1,Seeking information,0.257
+2025-01-01,1,Self-expression,0.066
+2025-01-01,1,Technical help,0.681
+2025-01-01,1,Writing,0.542
+2025-02-01,0,Multimedia,0.620
+2025-02-01,0,Other/Unknown,0.744
+2025-02-01,0,Practical Guidance,0.661
+2025-02-01,0,Seeking information,0.747
+2025-02-01,0,Self-expression,0.931
+2025-02-01,0,Technical help,0.334
+2025-02-01,0,Writing,0.471
+2025-02-01,1,Multimedia,0.380
+2025-02-01,1,Other/Unknown,0.256
+2025-02-01,1,Practical Guidance,0.339
+2025-02-01,1,Seeking information,0.253
+2025-02-01,1,Self-expression,0.069
+2025-02-01,1,Technical help,0.666
+2025-02-01,1,Writing,0.529
+2025-03-01,0,Multimedia,0.684
+2025-03-01,0,Other/Unknown,0.749
+2025-03-01,0,Practical Guidance,0.667
+2025-03-01,0,Seeking information,0.752
+2025-03-01,0,Self-expression,0.929
+2025-03-01,0,Technical help,0.336
+2025-03-01,0,Writing,0.474
+2025-03-01,1,Multimedia,0.316
+2025-03-01,1,Other/Unknown,0.251
+2025-03-01,1,Practical Guidance,0.333
+2025-03-01,1,Seeking information,0.248
+2025-03-01,1,Self-expression,0.071
+2025-03-01,1,Technical help,0.664
+2025-03-01,1,Writing,0.526
+2025-04-01,0,Multimedia,0.686
+2025-04-01,0,Other/Unknown,0.766
+2025-04-01,0,Practical Guidance,0.682
+2025-04-01,0,Seeking information,0.758
+2025-04-01,0,Self-expression,0.932
+2025-04-01,0,Technical help,0.329
+2025-04-01,0,Writing,0.487
+2025-04-01,1,Multimedia,0.314
+2025-04-01,1,Other/Unknown,0.234
+2025-04-01,1,Practical Guidance,0.318
+2025-04-01,1,Seeking information,0.242
+2025-04-01,1,Self-expression,0.068
+2025-04-01,1,Technical help,0.671
+2025-04-01,1,Writing,0.513
+2025-05-01,0,Multimedia,0.616
+2025-05-01,0,Other/Unknown,0.760
+2025-05-01,0,Practical Guidance,0.691
+2025-05-01,0,Seeking information,0.766
+2025-05-01,0,Self-expression,0.933
+2025-05-01,0,Technical help,0.336
+2025-05-01,0,Writing,0.495
+2025-05-01,1,Multimedia,0.384
+2025-05-01,1,Other/Unknown,0.240
+2025-05-01,1,Practical Guidance,0.309
+2025-05-01,1,Seeking information,0.234
+2025-05-01,1,Self-expression,0.067
+2025-05-01,1,Technical help,0.664
+2025-05-01,1,Writing,0.505
+2025-06-01,0,Multimedia,0.646
+2025-06-01,0,Other/Unknown,0.769
+2025-06-01,0,Practical Guidance,0.706
+2025-06-01,0,Seeking information,0.786
+2025-06-01,0,Self-expression,0.936
+2025-06-01,0,Technical help,0.340
+2025-06-01,0,Writing,0.508
+2025-06-01,1,Multimedia,0.354
+2025-06-01,1,Other/Unknown,0.231
+2025-06-01,1,Practical Guidance,0.294
+2025-06-01,1,Seeking information,0.214
+2025-06-01,1,Self-expression,0.064
+2025-06-01,1,Technical help,0.660
+2025-06-01,1,Writing,0.492
+2025-07-01,0,Multimedia,0.656
+2025-07-01,0,Other/Unknown,0.786
+2025-07-01,0,Practical Guidance,0.723
+2025-07-01,0,Seeking information,0.801
+2025-07-01,0,Self-expression,0.939
+2025-07-01,0,Technical help,0.334
+2025-07-01,0,Writing,0.526
+2025-07-01,1,Multimedia,0.344
+2025-07-01,1,Other/Unknown,0.214
+2025-07-01,1,Practical Guidance,0.277
+2025-07-01,1,Seeking information,0.199
+2025-07-01,1,Self-expression,0.061
+2025-07-01,1,Technical help,0.666
+2025-07-01,1,Writing,0.474
+2025-08-01,0,Multimedia,0.603
+2025-08-01,0,Other/Unknown,0.781
+2025-08-01,0,Practical Guidance,0.737
+2025-08-01,0,Seeking information,0.812
+2025-08-01,0,Self-expression,0.937
+2025-08-01,0,Technical help,0.371
+2025-08-01,0,Writing,0.536
+2025-08-01,1,Multimedia,0.397
+2025-08-01,1,Other/Unknown,0.219
+2025-08-01,1,Practical Guidance,0.263
+2025-08-01,1,Seeking information,0.188
+2025-08-01,1,Self-expression,0.063
+2025-08-01,1,Technical help,0.629
+2025-08-01,1,Writing,0.464
+2025-09-01,0,Multimedia,0.589
+2025-09-01,0,Other/Unknown,0.764
+2025-09-01,0,Practical Guidance,0.721
+2025-09-01,0,Seeking information,0.792
+2025-09-01,0,Self-expression,0.933
+2025-09-01,0,Technical help,0.393
+2025-09-01,0,Writing,0.507
+2025-09-01,1,Multimedia,0.411
+2025-09-01,1,Other/Unknown,0.236
+2025-09-01,1,Practical Guidance,0.279
+2025-09-01,1,Seeking information,0.208
+2025-09-01,1,Self-expression,0.067
+2025-09-01,1,Technical help,0.607
+2025-09-01,1,Writing,0.493
+2025-10-01,0,Multimedia,0.551
+2025-10-01,0,Other/Unknown,0.749
+2025-10-01,0,Practical Guidance,0.719
+2025-10-01,0,Seeking information,0.783
+2025-10-01,0,Self-expression,0.930
+2025-10-01,0,Technical help,0.402
+2025-10-01,0,Writing,0.493
+2025-10-01,1,Multimedia,0.449
+2025-10-01,1,Other/Unknown,0.251
+2025-10-01,1,Practical Guidance,0.281
+2025-10-01,1,Seeking information,0.217
+2025-10-01,1,Self-expression,0.070
+2025-10-01,1,Technical help,0.598
+2025-10-01,1,Writing,0.507
+2025-11-01,0,Multimedia,0.549
+2025-11-01,0,Other/Unknown,0.740
+2025-11-01,0,Practical Guidance,0.721
+2025-11-01,0,Seeking information,0.784
+2025-11-01,0,Self-expression,0.930
+2025-11-01,0,Technical help,0.401
+2025-11-01,0,Writing,0.494
+2025-11-01,1,Multimedia,0.451
+2025-11-01,1,Other/Unknown,0.260
+2025-11-01,1,Practical Guidance,0.279
+2025-11-01,1,Seeking information,0.216
+2025-11-01,1,Self-expression,0.070
+2025-11-01,1,Technical help,0.599
+2025-11-01,1,Writing,0.506
+2025-12-01,0,Multimedia,0.601
+2025-12-01,0,Other/Unknown,0.768
+2025-12-01,0,Practical Guidance,0.746
+2025-12-01,0,Seeking information,0.810
+2025-12-01,0,Self-expression,0.933
+2025-12-01,0,Technical help,0.403
+2025-12-01,0,Writing,0.518
+2025-12-01,1,Multimedia,0.399
+2025-12-01,1,Other/Unknown,0.232
+2025-12-01,1,Practical Guidance,0.254
+2025-12-01,1,Seeking information,0.190
+2025-12-01,1,Self-expression,0.067
+2025-12-01,1,Technical help,0.597
+2025-12-01,1,Writing,0.482
+2026-01-01,0,Multimedia,0.625
+2026-01-01,0,Other/Unknown,0.768
+2026-01-01,0,Practical Guidance,0.745
+2026-01-01,0,Seeking information,0.810
+2026-01-01,0,Self-expression,0.926
+2026-01-01,0,Technical help,0.424
+2026-01-01,0,Writing,0.503
+2026-01-01,1,Multimedia,0.375
+2026-01-01,1,Other/Unknown,0.232
+2026-01-01,1,Practical Guidance,0.255
+2026-01-01,1,Seeking information,0.190
+2026-01-01,1,Self-expression,0.074
+2026-01-01,1,Technical help,0.576
+2026-01-01,1,Writing,0.497
+2026-02-01,0,Multimedia,0.615
+2026-02-01,0,Other/Unknown,0.759
+2026-02-01,0,Practical Guidance,0.740
+2026-02-01,0,Seeking information,0.805
+2026-02-01,0,Self-expression,0.917
+2026-02-01,0,Technical help,0.432
+2026-02-01,0,Writing,0.493
+2026-02-01,1,Multimedia,0.385
+2026-02-01,1,Other/Unknown,0.241
+2026-02-01,1,Practical Guidance,0.260
+2026-02-01,1,Seeking information,0.195
+2026-02-01,1,Self-expression,0.083
+2026-02-01,1,Technical help,0.568
+2026-02-01,1,Writing,0.507
+2026-03-01,0,Multimedia,0.616
+2026-03-01,0,Other/Unknown,0.754
+2026-03-01,0,Practical Guidance,0.741
+2026-03-01,0,Seeking information,0.808
+2026-03-01,0,Self-expression,0.915
+2026-03-01,0,Technical help,0.445
+2026-03-01,0,Writing,0.488
+2026-03-01,1,Multimedia,0.384
+2026-03-01,1,Other/Unknown,0.246
+2026-03-01,1,Practical Guidance,0.259
+2026-03-01,1,Seeking information,0.192
+2026-03-01,1,Self-expression,0.085
+2026-03-01,1,Technical help,0.555
+2026-03-01,1,Writing,0.512
+2026-04-01,0,Multimedia,0.593
+2026-04-01,0,Other/Unknown,0.756
+2026-04-01,0,Practical Guidance,0.743
+2026-04-01,0,Seeking information,0.808
+2026-04-01,0,Self-expression,0.916
+2026-04-01,0,Technical help,0.454
+2026-04-01,0,Writing,0.486
+2026-04-01,1,Multimedia,0.407
+2026-04-01,1,Other/Unknown,0.244
+2026-04-01,1,Practical Guidance,0.257
+2026-04-01,1,Seeking information,0.192
+2026-04-01,1,Self-expression,0.084
+2026-04-01,1,Technical help,0.546
+2026-04-01,1,Writing,0.514
+2026-05-01,0,Multimedia,0.617
+2026-05-01,0,Other/Unknown,0.760
+2026-05-01,0,Practical Guidance,0.747
+2026-05-01,0,Seeking information,0.815
+2026-05-01,0,Self-expression,0.918
+2026-05-01,0,Technical help,0.463
+2026-05-01,0,Writing,0.504
+2026-05-01,1,Multimedia,0.383
+2026-05-01,1,Other/Unknown,0.240
+2026-05-01,1,Practical Guidance,0.253
+2026-05-01,1,Seeking information,0.185
+2026-05-01,1,Self-expression,0.082
+2026-05-01,1,Technical help,0.537
+2026-05-01,1,Writing,0.496
+2026-06-01,0,Multimedia,0.596
+2026-06-01,0,Other/Unknown,0.745
+2026-06-01,0,Practical Guidance,0.759
+2026-06-01,0,Seeking information,0.816
+2026-06-01,0,Self-expression,0.906
+2026-06-01,0,Technical help,0.451
+2026-06-01,0,Writing,0.487
+2026-06-01,1,Multimedia,0.404
+2026-06-01,1,Other/Unknown,0.255
+2026-06-01,1,Practical Guidance,0.241
+2026-06-01,1,Seeking information,0.184
+2026-06-01,1,Self-expression,0.094
+2026-06-01,1,Technical help,0.549
+2026-06-01,1,Writing,0.513
+2026-07-01,0,Multimedia,0.602
+2026-07-01,0,Other/Unknown,0.726
+2026-07-01,0,Practical Guidance,0.758
+2026-07-01,0,Seeking information,0.822
+2026-07-01,0,Self-expression,0.898
+2026-07-01,0,Technical help,0.420
+2026-07-01,0,Writing,0.490
+2026-07-01,1,Multimedia,0.398
+2026-07-01,1,Other/Unknown,0.274
+2026-07-01,1,Practical Guidance,0.242
+2026-07-01,1,Seeking information,0.178
+2026-07-01,1,Self-expression,0.102
+2026-07-01,1,Technical help,0.580
+2026-07-01,1,Writing,0.510
+2026-08-01,0,Multimedia,0.631
+2026-08-01,0,Other/Unknown,0.692
+2026-08-01,0,Practical Guidance,0.759
+2026-08-01,0,Seeking information,0.801
+2026-08-01,0,Self-expression,0.912
+2026-08-01,0,Technical help,0.441
+2026-08-01,0,Writing,0.524
+2026-08-01,1,Multimedia,0.369
+2026-08-01,1,Other/Unknown,0.308
+2026-08-01,1,Practical Guidance,0.241
+2026-08-01,1,Seeking information,0.199
+2026-08-01,1,Self-expression,0.088
+2026-08-01,1,Technical help,0.559
+2026-08-01,1,Writing,0.476
+2026-09-01,0,Multimedia,0.644
+2026-09-01,0,Other/Unknown,0.641
+2026-09-01,0,Practical Guidance,0.737
+2026-09-01,0,Seeking information,0.757
+2026-09-01,0,Self-expression,0.908
+2026-09-01,0,Technical help,0.429
+2026-09-01,0,Writing,0.510
+2026-09-01,1,Multimedia,0.356
+2026-09-01,1,Other/Unknown,0.359
+2026-09-01,1,Practical Guidance,0.263
+2026-09-01,1,Seeking information,0.243
+2026-09-01,1,Self-expression,0.092
+2026-09-01,1,Technical help,0.571
+2026-09-01,1,Writing,0.490
