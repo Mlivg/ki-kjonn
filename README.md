@@ -99,6 +99,8 @@ OpenAI's download has each topic's share of messages in Norway for all 27 months
 
 Writing fell from 34.7 % to 17.5 % of messages. That lowers the total by 1.65 points, because women's share is high in Writing. The fall in Technical help raises it by 1.20 points, because women's share is low there. Across the tests, the mix stays between −1.06 and +0.57 points.
 
+The results are consistent with women catching up in their use of individual ChatGPT accounts in Norway. The data cannot show whether women are catching up in AI use overall, because business accounts, Codex and other AI tools are not included.
+
 Analysis 02's conclusion holds. Its fixed weights differed a lot from the measured mix, so the close match between its 10.51 and this 10.56 is partly luck.
 
 Three topics have little early data, so their start shares are uncertain. The note shows how the result moves if they change, and how the published total limits them. It also lists the other limits and what was not checked.

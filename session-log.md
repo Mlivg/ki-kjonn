@@ -135,3 +135,7 @@
 - Task: line-by-line walkthrough of scripts/03_measured_mix.py with the owner, part 4 of 4 (the figure code).
 - Owner: asked to continue.
 - Result: the end labels rely on the lines being listed from highest to lowest end value, and nothing checked this. Added a check. Output files are unchanged. On the finished script the tests stopped all ten planted bugs, a clean copy gave identical output, and both data folders are unchanged. The walkthrough is finished. Nothing is uploaded to GitHub.
+
+- Task: add the "consistent with women catching up" reading to analysis 03.
+- Owner: asked whether the files said this, and approved adding it.
+- Result: added the reading and its limit to output/03_measured_mix_notes.md, README.md and card 03 in index.html. Numbers and scripts are unchanged. Not uploaded to GitHub.
