@@ -21,7 +21,7 @@ Most of the rise happened within topics. The main comparison uses the first and 
 | Writing | 0.382 | 49.8 % | 57.3 % | 7.5 |
 | **All messages (`Alle`)** | | **39.1 %** | **49.5 %** | **10.4** |
 
-An exact split is not possible, because the monthly topic mix is not published. A firmer statement comes from the range. Any fixed weights on these four topics must give a rise between 7.5 and 14.1 points. So the mix can account for at most 2.93 of the 10.43 points on the main comparison. Across all the tests below, that upper limit is never above 3.63 points.
+An exact split is not possible with these files, because they do not include the monthly topic mix. Analysis 03 uses OpenAI's published monthly mix. A firmer statement comes from the range. Any fixed weights on these four topics must give a rise between 7.5 and 14.1 points. So the mix can account for at most 2.93 of the 10.43 points on the main comparison. Across all the tests below, that upper limit is never above 3.63 points.
 
 ![Women's share of messages by topic and in total, with the fixed-mix line](02_shift_share.svg)
 
@@ -61,7 +61,7 @@ A negative value in "left for mix" does not mean the mix pulled the total down. 
 
 1. **The mix effect is not measured.** It is what remains after the within-topic part, so it also contains any measurement difference.
 2. **The weights describe work messages.** `Alle` and the topic shares cover all messages. Using the range reduces this problem for the four topics, but does not remove it for the three left out.
-3. **Three topics are left out of the main result.** They hold 13.9 % of the work weights. If they had not risen at all, the fixed-mix rise would be 9.05 points. Their weights among all messages are not published, so they could be larger than this.
+3. **Three topics are left out of the main result.** They hold 13.9 % of the work weights. If they had not risen at all, the fixed-mix rise would be 9.05 points. Their weights among all messages are not in these files, so they could be larger than this.
 4. **The seven-topic test understates late-starting topics.** A topic with no early value starts from its first published value, which removes its earlier rise.
 5. **The end of the series is thin.** In the main comparison, Technical help has one value in the last 3 months and Writing has two. The test with only complete months uses three each. OpenAI does not say why months are withheld in the files here. If withholding depends on the number of messages, the published months are not a random selection.
 6. **There is no statistical uncertainty here.** Message counts per cell are not published, so the tests show how far the choices move the result. They are not confidence intervals.
