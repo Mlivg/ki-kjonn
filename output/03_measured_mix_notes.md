@@ -33,6 +33,8 @@ The topic mix did change a lot. Writing fell from 34.7 % to 17.5 % of messages. 
 
 Women's share is high in Writing, so its fall lowers the total by 1.65 points. Women's share is low in Technical help, so its fall raises the total by 1.20 points.
 
+The results are consistent with women catching up in their use of individual ChatGPT accounts in Norway. Women's share rose in all four topics we can follow from the start. Technical help started lowest and rose most, while Writing started highest and rose least. The data cannot show whether women are catching up in AI use overall, because business accounts, Codex and other AI tools are not included.
+
 ## Method
 
 The total share is the sum over topics of each topic's share of messages times women's share in that topic. For each topic:
