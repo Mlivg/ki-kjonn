@@ -80,7 +80,7 @@ On the first and last 3 months, the total rose 10.43 points. With the topic mix 
 | Writing | 0.382 | 49.8 % | 57.3 % | 7.5 |
 | **All messages** | | **39.1 %** | **49.5 %** | **10.4** |
 
-The monthly topic mix is not published, so the mix effect is what remains and is not measured directly. Any fixed weights on these four topics give a rise between 7.5 and 14.1 points. Across all tests, the mix can explain at most 3.63 points under such weights.
+The page's files do not include the monthly topic mix, so the mix effect is what remains and is not measured directly. Any fixed weights on these four topics give a rise between 7.5 and 14.1 points. Across all tests, the mix can explain at most 3.63 points under such weights.
 
 The result does not show why women's share rose. It could be more women using ChatGPT, or the same women sending more messages. Three topics with too few early values are left out of the main result.
 

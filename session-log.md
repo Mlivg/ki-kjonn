@@ -139,3 +139,11 @@
 - Task: add the "consistent with women catching up" reading to analysis 03.
 - Owner: asked whether the files said this, and approved adding it.
 - Result: added the reading and its limit to output/03_measured_mix_notes.md, README.md and card 03 in index.html. Numbers and scripts are unchanged. Not uploaded to GitHub.
+
+- Task: check analysis 03 on GitHub and the live site.
+- Owner: uploaded the files through the GitHub web page, then moved the OpenAI folder from data/raw to data/ (commits 0772149 and 91f39cb, 2026-11-09 16:05 to 16:06).
+- Result: a fresh clone has all files in the right folders, identical to the local files. The 25 OpenAI files match the zip. With the output tables and figures deleted first, all three scripts rebuilt them byte for byte, with no unmatched numbers in analysis 01. The live page matches the local index.html and shows card 03 with the catching-up sentence. The card's links return 200. This entry and .gitignore exist only locally.
+
+- Task: make the website look more professional, as a polished list.
+- Owner: chose the polished list. Said not to state the owner's name on the site.
+- Result: rewrote index.html with a new title, a line saying it is independent and not an official KI-indeksen publication, one key number per card, consistent titles for analyses 02 and 03, a contact link to GitHub issues and a last-updated date. No name or affiliation is shown. Checked at desktop width in light mode and at phone width in dark mode, with no horizontal scroll. Corrected a wrong statement that the monthly topic mix is not published, in index.html, README.md and output/02_shift_share_notes.md. OpenAI does publish it, but the page's files do not include it. Not uploaded to GitHub.
