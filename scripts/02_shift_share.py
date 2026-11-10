@@ -369,7 +369,7 @@ y_b = lambda v: B_TOP + B_H * (B_HIGH / 100 - v) / ((B_HIGH - B_LOW) / 100)
 assert all(A_LOW / 100 <= v <= A_HIGH / 100 for t in FOUR for v in panel[t] if v is not None), "top panel scale"
 assert all(B_LOW / 100 <= v <= B_HIGH / 100 for v in alle + fixed_line), "bottom panel scale"
 
-svg = [f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} 730" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+svg = [f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} 748" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
 <title id="t">Women's share of ChatGPT messages in Norway, by topic and in total</title>
 <desc id="d">Top panel: monthly share of messages from women in four topics, July 2024 to September 2026. All four rise. Bottom panel: the published total against a line that holds the topic mix fixed. The two lines rise by a similar amount. All values are in output/02_shift_share.csv and data/raw/norway_gender_topics_monthly.csv.</desc>
 <style>
@@ -385,7 +385,7 @@ svg = [f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} 730" rol
   .small {{ fill:var(--muted); font-size:12px; }}
   .ink {{ fill:var(--ink2); }}
 </style>
-<rect width="{WIDTH}" height="730" fill="var(--surface)"/>
+<rect width="{WIDTH}" height="748" fill="var(--surface)"/>
 <text x="{LEFT - 28}" y="30" class="title">Women's share of messages rose in every topic we can follow</text>
 <text x="{LEFT - 28}" y="52">ChatGPT messages in Norway from typically female first names, July 2024 to September 2026</text>
 <text x="{LEFT - 28}" y="86" class="head">Share of messages from women, by topic</text>''',
@@ -401,8 +401,9 @@ svg += [f'<text x="{LEFT - 28}" y="430" class="head">Published total against a f
         line(fixed_line, "--s7", "Four topics, fixed mix", y_b),
         end_label(alle, y_b, "All"),
         end_label(fixed_line, y_b, "Fixed"),
-        f'<text x="{LEFT - 28}" y="688" class="small">Top: breaks are months OpenAI withheld. Bottom: gaps filled on a straight line, weights from topic_share_work_openai.</text>',
-        f'<text x="{LEFT - 28}" y="706" class="small">Panels use different vertical scales. Data: norway_gender_topics_monthly.csv, topics_expected_observed_persons.csv.</text>',
+        f'<text x="{LEFT - 28}" y="688" class="small">Top: a break is a month OpenAI withheld. It does not publish a value based on fewer than 100 messages,</text>',
+        f'<text x="{LEFT - 28}" y="706" class="small">to protect privacy. Bottom: gaps filled on a straight line, weights from topic_share_work_openai.</text>',
+        f'<text x="{LEFT - 28}" y="724" class="small">Panels use different vertical scales. Data: norway_gender_topics_monthly.csv, topics_expected_observed_persons.csv.</text>',
         "</svg>"]
 (OUT / "02_shift_share.svg").write_text("\n".join(svg) + "\n", encoding="utf-8")
 
