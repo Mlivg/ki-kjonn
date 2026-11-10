@@ -217,3 +217,15 @@
 - Task: line-by-line walkthrough of scripts/06_jobs_2015_2025.py with the owner, part 2 of 2 (the figure code).
 - Owner: asked to continue.
 - Result: three changes to the figure only. The title said "More women", which could be read as more women in total, so it now says "A larger share of women". The bottom line had no label, so it is now labelled "Implied". The bottom panel starts at 46 %, which makes the slope look steep, so a footnote now says so and gives the rise, 1.4 points over ten years, calculated from the data. Tables are unchanged, and a clean copy gave identical output. The walkthrough is finished. Not uploaded.
+
+- Task: check analysis 06 on GitHub and the live site.
+- Owner: uploaded the files through the GitHub web page (commits 6cf3aca, f7fb0c5 and 64ab234, 2026-11-10 13:07 to 13:08).
+- Result: a fresh clone has all files in the right folders, identical to the local files, including session-log.md before this entry. With the 16 output tables and figures deleted first, all six scripts rebuilt them byte for byte, with no unmatched numbers in analysis 01. All links on the page return 200. The live page matches the local index.html and shows card 06. This entry and .gitignore exist only locally.
+
+- Task: a report on all six analyses, on the website and as a file.
+- Owner: asked for a short report with findings, connections, implications and weaknesses, reviewed three drafts, removed parts, asked for a data section, and asked for the full report on the website with small tables.
+- Result: wrote output/00_report.md. Added the full report to index.html above the analysis cards, with a short "Report / Analyses" menu, compact tables and a link to the file on GitHub. Updated the footer date to 10 November 2026. Added the report to README.md. Checked at desktop width and phone width, with no horizontal scroll and no table wider than the screen. Dark mode was not checked in the browser, because local files always show in light mode. Not uploaded.
+
+- Task: show the analysis cards two in a row.
+- Owner: asked for the analyses side by side, two in a row.
+- Result: index.html now shows the cards in two columns on screens at least 640 px wide, and in one column on phones. The links in each card line up at the bottom, so cards in the same row look even. Checked at desktop width. Not uploaded.

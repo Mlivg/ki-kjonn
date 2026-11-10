@@ -4,6 +4,8 @@ Six analyses of the numbers on [kiindeksen.no/kjonn.html](https://kiindeksen.no/
 
 Website: [mlivg.github.io/ki-kjonn](https://mlivg.github.io/ki-kjonn/)
 
+Report on all six analyses, with connections, implications and weaknesses: [output/00_report.md](output/00_report.md). The same report is on the website.
+
 ## Contents
 
 | Section | What it covers |
@@ -170,6 +172,7 @@ Scripts 01, 02, 04, 05 and 06 read only `data/raw`. Script 03 also reads `data/r
 
 | Path | Content |
 |---|---|
+| [output/00_report.md](output/00_report.md) | Report on all six analyses: findings, connections, implications, weaknesses |
 | [scripts/01_replicate_headline.py](scripts/01_replicate_headline.py) | The replication pipeline |
 | [output/01_replicate_headline.csv](output/01_replicate_headline.csv) | Page number, our number and status for each headline number |
 | [output/01_replicate_headline_notes.md](output/01_replicate_headline_notes.md) | Method choices, discrepancies and open questions |
