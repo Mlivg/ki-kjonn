@@ -147,3 +147,37 @@
 - Task: make the website look more professional, as a polished list.
 - Owner: chose the polished list. Said not to state the owner's name on the site.
 - Result: rewrote index.html with a new title, a line saying it is independent and not an official KI-indeksen publication, one key number per card, consistent titles for analyses 02 and 03, a contact link to GitHub issues and a last-updated date. No name or affiliation is shown. Checked at desktop width in light mode and at phone width in dark mode, with no horizontal scroll. Corrected a wrong statement that the monthly topic mix is not published, in index.html, README.md and output/02_shift_share_notes.md. OpenAI does publish it, but the page's files do not include it. Not uploaded to GitHub.
+
+- Task: check the new website design on GitHub and the live site.
+- Owner: uploaded the four changed files through the GitHub web page (commits 503eb57 and dbdfddc, 2026-11-09 16:19 to 16:20).
+- Result: a fresh clone has all files in the right folders, identical to the local files. All 15 links on the page return 200. The live page at https://mlivg.github.io/ki-kjonn/ is identical to the local index.html. This entry and .gitignore exist only locally.
+
+## 2026-11-10
+
+- Task: make analysis titles look clickable and tone down the key numbers on the website.
+- Owner: asked for blue titles, and key numbers in the same size as the sentence but a different colour.
+- Result: titles in index.html now use the link blue. Key numbers are the same size as their sentence (16 px, checked in the browser) and dark orange, #b04a0c in light mode (contrast 5.34:1) and #f29a5c in dark mode (7.92:1). Stopped "10.43-point" from breaking at the hyphen on phones. Checked at desktop width in light mode and phone width in dark mode, with no horizontal scroll. Not uploaded to GitHub.
+
+- Task: change the key-number colour on the website.
+- Owner: said the orange looked red and should not be red.
+- Result: key numbers in index.html are now teal, #0b7a5e in light mode (contrast 5.17:1) and #4fc9a2 in dark mode (8.47:1). Not uploaded to GitHub.
+
+- Task: check the new key-number colour on the live site.
+- Owner: uploaded index.html (commit c2d5028, 2026-11-10 11:34).
+- Result: index.html on GitHub is identical to the local file, and the live page matches it. session-log.md on GitHub is an older version without the entries from 2026-11-09 16:20 onward.
+
+- Task: analysis 04, are the gaps between topics closing?
+- Owner: chose this analysis from three simpler options and approved the plan.
+- Result: wrote scripts/04_topic_gaps.py, output/04_topic_gaps.csv, output/04_topic_gaps_topics.csv, output/04_topic_gaps.svg and output/04_topic_gaps_notes.md. Added card 04 to index.html and a section to README.md. The gap between the highest and lowest of four topics fell from 29.43 to 22.80 points, first to last 3 months. Writing was highest and Technical help lowest in all 21 months where all four are published. The gap shrinks in every test, by 2.83 to 7.93 points. Monthly trend -2.93 points per year, with single months between 12.7 and 31.7. The average distance from 50 % is reported but is misleading, because the total rose toward 50 %. Tests stopped five of six planted bugs, and the sixth is not a real bug. A separate recalculation and a clean-copy rerun matched. data/raw is unchanged. Not uploaded. The owner has not yet gone through this script line by line.
+
+- Task: line-by-line walkthrough of scripts/04_topic_gaps.py with the owner, part 1 of 2 (method, tests, data, output).
+- Owner: asked for the walkthrough.
+- Result: no code changed. Noted that one planted bug in the trend formula is mathematically the same as the original, which is why the tests did not stop it.
+
+- Task: line-by-line walkthrough of scripts/04_topic_gaps.py with the owner, part 2 of 2 (the figure code).
+- Owner: asked to continue.
+- Result: the figure's footnote told readers to hover a dot, which does not work when GitHub shows the SVG as an image. Replaced it with the fact the hover gave: Writing is highest and Technical help lowest in every month shown, with a check that stops the script if this stops being true. The tables are unchanged, and only the footnote in the figure changed. A clean copy gave identical output. The walkthrough is finished. Not uploaded.
+
+- Task: explain the breaks in the lines in every figure.
+- Owner: asked for a footnote saying why lines break, in all analyses.
+- Result: the figures for analyses 02 and 04 now say that a break is a month OpenAI withheld, because it does not publish a value based on fewer than 100 messages, to protect privacy. The 100-message rule is from OpenAI's data dictionary, and the privacy reason is from kiindeksen.no. Analysis 01 has no figure, and the figure for analysis 03 has no breaks. Tables are unchanged, and a clean copy gave identical output. Not uploaded.
