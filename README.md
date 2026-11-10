@@ -1,6 +1,6 @@
 # ki-kjonn
 
-Five analyses of the numbers on [kiindeksen.no/kjonn.html](https://kiindeksen.no/kjonn.html) ("Menn, kvinner og ChatGPT", 3 November 2026). The page finds no gender gap in work use of ChatGPT in Norway. Women send 50 % of work messages, and their jobs imply 50 %. Analysis 01 rebuilds those numbers from the page's own CSV files and reports what matches and what does not. Analysis 02 asks a question the page leaves open: did women's share rise within topics, or did the topic mix shift? Analysis 03 answers the same question with OpenAI's measured monthly topic mix. Analysis 04 asks whether the gaps between topics are closing. Analysis 05 asks whether the rise has levelled off.
+Six analyses of the numbers on [kiindeksen.no/kjonn.html](https://kiindeksen.no/kjonn.html) ("Menn, kvinner og ChatGPT", 3 November 2026). The page finds no gender gap in work use of ChatGPT in Norway. Women send 50 % of work messages, and their jobs imply 50 %. Analysis 01 rebuilds those numbers from the page's own CSV files and reports what matches and what does not. Analysis 02 asks a question the page leaves open: did women's share rise within topics, or did the topic mix shift? Analysis 03 answers the same question with OpenAI's measured monthly topic mix. Analysis 04 asks whether the gaps between topics are closing. Analysis 05 asks whether the rise has levelled off. Analysis 06 asks whether women moved into the jobs with the highest ChatGPT use between 2015 and 2025.
 
 Website: [mlivg.github.io/ki-kjonn](https://mlivg.github.io/ki-kjonn/)
 
@@ -16,6 +16,7 @@ Website: [mlivg.github.io/ki-kjonn](https://mlivg.github.io/ki-kjonn/)
 | [Analysis 03: the measured topic mix](#analysis-03-the-measured-topic-mix) | The same split with OpenAI's monthly topic mix |
 | [Analysis 04: the gaps between topics](#analysis-04-the-gaps-between-topics) | Whether the topics moved closer together |
 | [Analysis 05: has the rise levelled off?](#analysis-05-has-the-rise-levelled-off) | Whether women's share is still rising |
+| [Analysis 06: jobs from 2015 to 2025](#analysis-06-jobs-from-2015-to-2025) | Whether women moved into the jobs with the highest use |
 | [How to rerun](#how-to-rerun) | One command per analysis, no extra packages |
 | [Files](#files) | Every file in the repository |
 | [Data and licence](#data-and-licence) | Sources and terms |
@@ -125,6 +126,16 @@ The slowdown started in spring 2026. It is clearest in Practical guidance and Se
 
 Details are in [output/05_levelling_off_notes.md](output/05_levelling_off_notes.md). The figure is [output/05_levelling_off.svg](output/05_levelling_off.svg).
 
+## Analysis 06: jobs from 2015 to 2025
+
+Women moved into the jobs with the highest ChatGPT use faster than men. The share of employed women in the fifth of jobs with the highest use per worker rose from 16.57 % in 2015 to 19.29 % in 2025. For men it rose from 19.63 % to 20.94 %. Women's share grows more than men's in every test, though only slightly with the top tenth.
+
+With today's use per job, 2015 employment would give women 47.81 % of work messages, and 2025 employment gives 49.18 %. That is the same 49.18 % as in analysis 01. The implied share moved only 0.08 points from 2024 to 2025, so changes in where women work cannot explain the recent rise in women's share of messages.
+
+Use per worker comes from job tasks and is held fixed, so this shows where women and men work, not how they use ChatGPT.
+
+Details are in [output/06_jobs_2015_2025_notes.md](output/06_jobs_2015_2025_notes.md). The figure is [output/06_jobs_2015_2025.svg](output/06_jobs_2015_2025.svg).
+
 ## How to rerun
 
 Python 3.9 or newer. No extra packages.
@@ -149,7 +160,11 @@ python3 -I scripts/04_topic_gaps.py
 python3 -I scripts/05_levelling_off.py
 ```
 
-Scripts 01, 02, 04 and 05 read only `data/raw`. Script 03 also reads `data/raw_openai_signals`. Each script writes its results to `output/` and prints its main table and extra checks. Scripts 02 to 05 run their tests on made-up data first, and stop if one fails.
+```bash
+python3 -I scripts/06_jobs_2015_2025.py
+```
+
+Scripts 01, 02, 04, 05 and 06 read only `data/raw`. Script 03 also reads `data/raw_openai_signals`. Each script writes its results to `output/` and prints its main table and extra checks. Scripts 02 to 06 run their tests on made-up data first, and stop if one fails.
 
 ## Files
 
@@ -177,6 +192,12 @@ Scripts 01, 02, 04 and 05 read only `data/raw`. Script 03 also reads `data/raw_o
 | [output/05_levelling_off_monthly.csv](output/05_levelling_off_monthly.csv) | Each month, its 3-month average and the change from a year earlier |
 | [output/05_levelling_off.svg](output/05_levelling_off.svg) | Figure of women's share over time and the change from a year earlier |
 | [output/05_levelling_off_notes.md](output/05_levelling_off_notes.md) | Result, method, tests, limits and checks |
+| [scripts/06_jobs_2015_2025.py](scripts/06_jobs_2015_2025.py) | Women and men in the highest-use jobs, 2015 to 2025, with its tests |
+| [output/06_jobs_2015_2025.csv](output/06_jobs_2015_2025.csv) | The main result and three tests of its choices |
+| [output/06_jobs_2015_2025_yearly.csv](output/06_jobs_2015_2025_yearly.csv) | Every year from 2015 to 2025 |
+| [output/06_jobs_2015_2025_groups.csv](output/06_jobs_2015_2025_groups.csv) | Women's share in each of the five groups |
+| [output/06_jobs_2015_2025.svg](output/06_jobs_2015_2025.svg) | Figure of women and men in the highest-use jobs and the implied share |
+| [output/06_jobs_2015_2025_notes.md](output/06_jobs_2015_2025_notes.md) | Result, method, tests, limits and checks |
 | [index.html](index.html) | The website, listing the analyses |
 | `data/raw/` | The page's data files, unchanged (see below) |
 | `data/raw_openai_signals/` | OpenAI's Signals download, unchanged (see below) |
@@ -215,6 +236,8 @@ In analysis 03, the tests on made-up data stopped all ten bugs planted on purpos
 In analysis 04, the tests on made-up data stopped five of six bugs planted on purpose. The sixth gives the same answer as the original code, so it is not a real bug. A separate short script gave the same main result. A clean copy with only the script and `data/raw` gave byte-identical output.
 
 In analysis 05, the tests on made-up data stopped all six bugs planted on purpose. A separate short script gave the same main result. A clean copy with only the script and `data/raw` gave byte-identical output.
+
+In analysis 06, the first tests stopped four of six bugs planted on purpose. Two new tests now stop all six. A separate short script gave the same main result. A clean copy with only the script and `data/raw` gave byte-identical output.
 
 ## Folder context
 

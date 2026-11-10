@@ -197,3 +197,23 @@
 - Task: line-by-line walkthrough of scripts/05_levelling_off.py with the owner, part 2 of 2 (the figure code).
 - Owner: asked to continue.
 - Result: the 3-month average in the figure ends in the month shown, which the figure did not say, and the note said the average "peaked in March 2026" without saying it covers January to March. Added a footnote to the figure and made the note precise. The tables are unchanged, and a clean copy gave identical output. The walkthrough is finished. Not uploaded.
+
+- Task: check analysis 05 on GitHub and the live site.
+- Owner: uploaded files through the GitHub web page (commits d56c18b and 22a4915, 2026-11-10 12:56).
+- Result: all files on GitHub are identical to the local files, except that scripts/05_levelling_off.py is missing. The card's Script link returns 404, and analysis 05 cannot be rerun from a fresh copy. Analyses 01 to 04 rebuild their output byte for byte. The live page matches the local index.html.
+
+- Task: check the missing analysis 05 script on GitHub.
+- Owner: uploaded scripts/05_levelling_off.py through the GitHub web page.
+- Result: the script is on GitHub (commit 6e6ea65, 2026-11-10 12:58). In a fresh clone, with the 12 output tables and figures deleted first, all five scripts rebuilt them byte for byte, with no unmatched numbers in analysis 01. All links on the page return 200, and the live page matches the local index.html. session-log.md on GitHub is older than the local one.
+
+- Task: analysis 06, did women move into the jobs with the highest ChatGPT use from 2015 to 2025?
+- Owner: chose this analysis and approved the plan.
+- Result: wrote scripts/06_jobs_2015_2025.py, output/06_jobs_2015_2025.csv, output/06_jobs_2015_2025_yearly.csv, output/06_jobs_2015_2025_groups.csv, output/06_jobs_2015_2025.svg and output/06_jobs_2015_2025_notes.md. Added card 06 to index.html and a section to README.md. The occupation file's women and men equal SSB 2025 for all 390 occupations, and the implied share for 2025 reproduces analysis 01's 49.18 %. Share of employed women in the top fifth by use: 16.57 % in 2015, 19.29 % in 2025 (+2.72). Men: 19.63 % to 20.94 % (+1.31). Women grow more in every test, only slightly with the top tenth. Implied women's share of work messages: 47.81 % with 2015 jobs, 49.18 % with 2025 jobs, +0.08 from 2024 to 2025. SSB totals move smoothly, with a dip in 2020. The first tests stopped four of six planted bugs, and two new tests now stop all six. A separate recalculation and a clean-copy rerun matched. data/raw is unchanged. Not uploaded. The owner has not yet gone through this script line by line.
+
+- Task: line-by-line walkthrough of scripts/06_jobs_2015_2025.py with the owner, part 1 of 2 (method, tests, data, output).
+- Owner: asked for the walkthrough.
+- Result: the reading loop put every row that was not "kvinner" into the men's counts. The file only has "kvinner" and "menn", so no result was wrong. Added a check that stops the script if another value appears. Output files are unchanged.
+
+- Task: line-by-line walkthrough of scripts/06_jobs_2015_2025.py with the owner, part 2 of 2 (the figure code).
+- Owner: asked to continue.
+- Result: three changes to the figure only. The title said "More women", which could be read as more women in total, so it now says "A larger share of women". The bottom line had no label, so it is now labelled "Implied". The bottom panel starts at 46 %, which makes the slope look steep, so a footnote now says so and gives the rise, 1.4 points over ten years, calculated from the data. Tables are unchanged, and a clean copy gave identical output. The walkthrough is finished. Not uploaded.
