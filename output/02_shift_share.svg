@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 730" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 748" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
 <title id="t">Women's share of ChatGPT messages in Norway, by topic and in total</title>
 <desc id="d">Top panel: monthly share of messages from women in four topics, July 2024 to September 2026. All four rise. Bottom panel: the published total against a line that holds the topic mix fixed. The two lines rise by a similar amount. All values are in output/02_shift_share.csv and data/raw/norway_gender_topics_monthly.csv.</desc>
 <style>
@@ -14,7 +14,7 @@
   .small { fill:var(--muted); font-size:12px; }
   .ink { fill:var(--ink2); }
 </style>
-<rect width="720" height="730" fill="var(--surface)"/>
+<rect width="720" height="748" fill="var(--surface)"/>
 <text x="16" y="30" class="title">Women's share of messages rose in every topic we can follow</text>
 <text x="16" y="52">ChatGPT messages in Norway from typically female first names, July 2024 to September 2026</text>
 <text x="16" y="86" class="head">Share of messages from women, by topic</text>
@@ -247,6 +247,7 @@
 <circle cx="580.0" cy="520.8" r="8" fill="transparent"><title>Four topics, fixed mix, 2026-09: 50.7 %</title></circle>
 <text x="590.0" y="538.2" class="small ink">All 48.6%</text>
 <text x="590.0" y="524.8" class="small ink">Fixed 50.7%</text>
-<text x="16" y="688" class="small">Top: breaks are months OpenAI withheld. Bottom: gaps filled on a straight line, weights from topic_share_work_openai.</text>
-<text x="16" y="706" class="small">Panels use different vertical scales. Data: norway_gender_topics_monthly.csv, topics_expected_observed_persons.csv.</text>
+<text x="16" y="688" class="small">Top: a break is a month OpenAI withheld. It does not publish a value based on fewer than 100 messages,</text>
+<text x="16" y="706" class="small">to protect privacy. Bottom: gaps filled on a straight line, weights from topic_share_work_openai.</text>
+<text x="16" y="724" class="small">Panels use different vertical scales. Data: norway_gender_topics_monthly.csv, topics_expected_observed_persons.csv.</text>
 </svg>
