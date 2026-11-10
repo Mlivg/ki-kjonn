@@ -1,0 +1,5 @@
+spec,description,employment_share_of_top_group_pct,women_in_top_2015_pct,women_in_top_2025_pct,women_change,men_in_top_2015_pct,men_in_top_2025_pct,men_change,women_share_inside_top_2015_pct,women_share_inside_top_2025_pct
+main,"Top fifth by use, groups set on 2025 employment",20.15,16.57,19.29,2.72,19.63,20.94,1.31,44.48,46.16
+groups_2015,"Top fifth by use, groups set on 2015 employment",19.82,17.98,20.75,2.78,21.57,23.0,1.43,44.17,45.66
+top_tenth,"Top tenth by use, groups set on 2025 employment",9.83,7.06,8.33,1.27,10.04,11.23,1.19,40.05,40.86
+all_codes,"Top fifth, shares of all employed, including code 0000 and codes without a use value",20.15,15.72,18.45,2.72,17.62,19.35,1.73,44.48,46.16
