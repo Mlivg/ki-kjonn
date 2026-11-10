@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 658" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+<title id="t">Women's share of ChatGPT messages in Norway, and how much it rose from a year earlier</title>
+<desc id="d">Top panel: women's share of all messages per month, July 2024 to September 2026, with a 3-month average. Shaded bands mark July to September each year. Bottom panel: the 3-month average minus the same months a year earlier. All values are in output/05_levelling_off.csv and output/05_levelling_off_monthly.csv.</desc>
+<style>
+  svg { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#6b6a66; --grid:rgba(11,11,11,.10); --axis:rgba(11,11,11,.45); --band:rgba(11,11,11,.05); --s1:#2a78d6; }
+  @media (prefers-color-scheme: dark) {
+    svg { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#a3a29b; --grid:rgba(255,255,255,.10); --axis:rgba(255,255,255,.45); --band:rgba(255,255,255,.06); --s1:#3987e5; }
+  }
+  text { fill:var(--ink2); font-size:13px; }
+  .title { fill:var(--ink); font-size:18px; font-weight:600; }
+  .head { fill:var(--ink); font-size:14px; font-weight:600; }
+  .small { fill:var(--muted); font-size:12px; }
+  .value { fill:var(--ink); font-size:12px; font-weight:600; }
+</style>
+<rect width="720" height="658" fill="var(--surface)"/>
+<text x="16" y="30" class="title">The rise slowed in the second year</text>
+<text x="16" y="52">Women's share of ChatGPT messages in Norway, July 2024 to September 2026</text>
+<text x="16" y="86" class="head">Share of all messages from women</text>
+<rect x="44.0" y="104" width="59.2" height="230" fill="var(--band)"/>
+<rect x="316.5" y="104" width="71.1" height="230" fill="var(--band)"/>
+<rect x="600.8" y="104" width="59.2" height="230" fill="var(--band)"/>
+<line x1="44" x2="660" y1="334.0" y2="334.0" stroke="var(--grid)"/>
+<text x="36" y="338.0" text-anchor="end" class="small">30%</text>
+<line x1="44" x2="660" y1="257.3" y2="257.3" stroke="var(--grid)"/>
+<text x="36" y="261.3" text-anchor="end" class="small">40%</text>
+<line x1="44" x2="660" y1="180.7" y2="180.7" stroke="var(--grid)"/>
+<text x="36" y="184.7" text-anchor="end" class="small">50%</text>
+<line x1="44" x2="660" y1="104.0" y2="104.0" stroke="var(--grid)"/>
+<text x="36" y="108.0" text-anchor="end" class="small">60%</text>
+<text x="44.0" y="352" text-anchor="start" class="small">Jul 2024</text>
+<text x="186.2" y="352" text-anchor="middle" class="small">Jan 2025</text>
+<text x="328.3" y="352" text-anchor="middle" class="small">Jul 2025</text>
+<text x="470.5" y="352" text-anchor="middle" class="small">Jan 2026</text>
+<text x="612.6" y="352" text-anchor="middle" class="small">Jul 2026</text>
+<polyline points="44.0,294.9 67.7,253.5 91.4,245.1 115.1,254.3 138.8,233.6 162.5,234.3 186.2,237.4 209.8,224.4 233.5,221.3 257.2,199.8 280.9,202.1 304.6,200.6 328.3,202.9 352.0,212.1 375.7,186.8 399.4,202.9 423.1,177.6 446.8,180.7 470.5,171.5 494.2,174.5 517.8,157.7 541.5,179.9 565.2,169.2 588.9,171.5 612.6,183.7 636.3,178.4 660.0,191.4" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="91.4,264.5 115.1,250.9 138.8,244.3 162.5,240.7 186.2,235.1 209.8,232.0 233.5,227.7 257.2,215.2 280.9,207.8 304.6,200.9 328.3,201.9 352.0,205.2 375.7,200.6 399.4,200.6 423.1,189.1 446.8,187.1 470.5,176.6 494.2,175.6 517.8,167.9 541.5,170.7 565.2,168.9 588.9,173.5 612.6,174.8 636.3,177.9 660.0,184.5" fill="none" stroke="var(--s1)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="67.7" y="120" text-anchor="middle" class="value">39.1%</text>
+<text x="352.0" y="120" text-anchor="middle" class="value">47.4%</text>
+<text x="636.3" y="120" text-anchor="middle" class="value">49.5%</text>
+<line x1="194" x2="210" y1="320" y2="320" stroke="var(--muted)" stroke-width="1.5"/>
+<text x="215" y="324" class="small">Each month</text>
+<line x1="304" x2="320" y1="320" y2="320" stroke="var(--s1)" stroke-width="2.5"/>
+<text x="325" y="324" class="small">3-month average</text>
+<text x="16" y="392" class="head">Change from a year earlier, 3-month average, in percentage points</text>
+<line x1="44" x2="660" y1="529.4" y2="529.4" stroke="var(--axis)"/>
+<text x="36" y="533.4" text-anchor="end" class="small">0</text>
+<line x1="44" x2="660" y1="492.3" y2="492.3" stroke="var(--grid)"/>
+<text x="36" y="496.3" text-anchor="end" class="small">4</text>
+<line x1="44" x2="660" y1="455.1" y2="455.1" stroke="var(--grid)"/>
+<text x="36" y="459.1" text-anchor="end" class="small">8</text>
+<line x1="44" x2="660" y1="418.0" y2="418.0" stroke="var(--grid)"/>
+<text x="36" y="422.0" text-anchor="end" class="small">12</text>
+<text x="44.0" y="566" text-anchor="start" class="small">Jul 2024</text>
+<text x="186.2" y="566" text-anchor="middle" class="small">Jan 2025</text>
+<text x="328.3" y="566" text-anchor="middle" class="small">Jul 2025</text>
+<text x="470.5" y="566" text-anchor="middle" class="small">Jan 2026</text>
+<text x="612.6" y="566" text-anchor="middle" class="small">Jul 2026</text>
+<polyline points="375.7,452.0 399.4,468.5 423.1,462.6 446.8,464.4 470.5,458.5 494.2,461.0 517.8,457.0 541.5,475.6 565.2,482.4 588.9,496.3 612.6,496.6 636.3,496.3 660.0,509.9" fill="none" stroke="var(--s1)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="375.7" cy="452.0" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2025-09: +8.3 points</title></circle>
+<circle cx="399.4" cy="468.5" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2025-10: +6.6 points</title></circle>
+<circle cx="423.1" cy="462.6" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2025-11: +7.2 points</title></circle>
+<circle cx="446.8" cy="464.4" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2025-12: +7.0 points</title></circle>
+<circle cx="470.5" cy="458.5" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2026-01: +7.6 points</title></circle>
+<circle cx="494.2" cy="461.0" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2026-02: +7.4 points</title></circle>
+<circle cx="517.8" cy="457.0" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2026-03: +7.8 points</title></circle>
+<circle cx="541.5" cy="475.6" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2026-04: +5.8 points</title></circle>
+<circle cx="565.2" cy="482.4" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2026-05: +5.1 points</title></circle>
+<circle cx="588.9" cy="496.3" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2026-06: +3.6 points</title></circle>
+<circle cx="612.6" cy="496.6" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2026-07: +3.5 points</title></circle>
+<circle cx="636.3" cy="496.3" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2026-08: +3.6 points</title></circle>
+<circle cx="660.0" cy="509.9" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"><title>2026-09: +2.1 points</title></circle>
+<text x="383.7" y="444.0" class="value">+8.3</text>
+<text x="668.0" y="501.9" class="value">+2.1</text>
+<text x="16" y="614" class="small">Shaded: July to September each year, with their averages. Each 3-month average ends in the month shown.</text>
+<text x="16" y="632" class="small">The bottom panel starts in September 2025, the first month with a full year of data before it.</text>
+<text x="16" y="650" class="small">Data: norway_gender_topics_monthly.csv, column Alle.</text>
+</svg>

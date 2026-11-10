@@ -1,0 +1,8 @@
+spec,description,mean_2024,mean_2025,mean_2026,rise_first_year,rise_second_year,second_as_share_of_first_pct,values_used
+main,"All messages, July to September each year",39.07,47.4,49.5,8.33,2.1,25.2,3+3+3
+july,"All messages, July only",35.1,47.1,49.6,12.0,2.5,20.8,1+1+1
+september,"All messages, September only",41.6,49.2,48.6,7.6,-0.6,-7.9,1+1+1
+topic_writing,"Writing, July to September each year",49.8,54.17,57.3,4.37,3.13,71.8,3+3+2
+topic_practical,"Practical guidance, July to September each year",38.4,50.57,52.03,12.17,1.47,12.1,3+3+3
+topic_seeking,"Seeking information, July to September each year",32.1,40.83,42.73,8.73,1.9,21.8,3+3+3
+topic_technical,"Technical help, July to September each year",20.37,27.95,34.5,7.58,6.55,86.4,3+2+1
