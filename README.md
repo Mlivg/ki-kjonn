@@ -1,6 +1,6 @@
 # ki-kjonn
 
-Four analyses of the numbers on [kiindeksen.no/kjonn.html](https://kiindeksen.no/kjonn.html) ("Menn, kvinner og ChatGPT", 3 November 2026). The page finds no gender gap in work use of ChatGPT in Norway. Women send 50 % of work messages, and their jobs imply 50 %. Analysis 01 rebuilds those numbers from the page's own CSV files and reports what matches and what does not. Analysis 02 asks a question the page leaves open: did women's share rise within topics, or did the topic mix shift? Analysis 03 answers the same question with OpenAI's measured monthly topic mix. Analysis 04 asks whether the gaps between topics are closing.
+Five analyses of the numbers on [kiindeksen.no/kjonn.html](https://kiindeksen.no/kjonn.html) ("Menn, kvinner og ChatGPT", 3 November 2026). The page finds no gender gap in work use of ChatGPT in Norway. Women send 50 % of work messages, and their jobs imply 50 %. Analysis 01 rebuilds those numbers from the page's own CSV files and reports what matches and what does not. Analysis 02 asks a question the page leaves open: did women's share rise within topics, or did the topic mix shift? Analysis 03 answers the same question with OpenAI's measured monthly topic mix. Analysis 04 asks whether the gaps between topics are closing. Analysis 05 asks whether the rise has levelled off.
 
 Website: [mlivg.github.io/ki-kjonn](https://mlivg.github.io/ki-kjonn/)
 
@@ -15,6 +15,7 @@ Website: [mlivg.github.io/ki-kjonn](https://mlivg.github.io/ki-kjonn/)
 | [Analysis 02: within topics or topic mix?](#analysis-02-within-topics-or-topic-mix) | What drove the rise in women's share over time |
 | [Analysis 03: the measured topic mix](#analysis-03-the-measured-topic-mix) | The same split with OpenAI's monthly topic mix |
 | [Analysis 04: the gaps between topics](#analysis-04-the-gaps-between-topics) | Whether the topics moved closer together |
+| [Analysis 05: has the rise levelled off?](#analysis-05-has-the-rise-levelled-off) | Whether women's share is still rising |
 | [How to rerun](#how-to-rerun) | One command per analysis, no extra packages |
 | [Files](#files) | Every file in the repository |
 | [Data and licence](#data-and-licence) | Sources and terms |
@@ -116,6 +117,14 @@ The gap shrank because women's share rose 14.1 points in Technical help and 7.5 
 
 Details are in [output/04_topic_gaps_notes.md](output/04_topic_gaps_notes.md). The figure is [output/04_topic_gaps.svg](output/04_topic_gaps.svg).
 
+## Analysis 05: has the rise levelled off?
+
+The rise slowed sharply in the second year, but has not clearly stopped. Comparing July to September each year, women's share went from 39.07 % in 2024 to 47.40 % in 2025 and 49.50 % in 2026. That is +8.33 points in the first year and +2.10 in the second.
+
+The slowdown started in spring 2026. It is clearest in Practical guidance and Seeking information. Writing and Technical help kept rising at a similar pace.
+
+Details are in [output/05_levelling_off_notes.md](output/05_levelling_off_notes.md). The figure is [output/05_levelling_off.svg](output/05_levelling_off.svg).
+
 ## How to rerun
 
 Python 3.9 or newer. No extra packages.
@@ -136,7 +145,11 @@ python3 -I scripts/03_measured_mix.py
 python3 -I scripts/04_topic_gaps.py
 ```
 
-Scripts 01, 02 and 04 read only `data/raw`. Script 03 also reads `data/raw_openai_signals`. Each script writes its results to `output/` and prints its main table and extra checks. Scripts 02, 03 and 04 run their tests on made-up data first, and stop if one fails.
+```bash
+python3 -I scripts/05_levelling_off.py
+```
+
+Scripts 01, 02, 04 and 05 read only `data/raw`. Script 03 also reads `data/raw_openai_signals`. Each script writes its results to `output/` and prints its main table and extra checks. Scripts 02 to 05 run their tests on made-up data first, and stop if one fails.
 
 ## Files
 
@@ -159,6 +172,11 @@ Scripts 01, 02 and 04 read only `data/raw`. Script 03 also reads `data/raw_opena
 | [output/04_topic_gaps_topics.csv](output/04_topic_gaps_topics.csv) | The main result, topic by topic |
 | [output/04_topic_gaps.svg](output/04_topic_gaps.svg) | Figure of the gap between topics, month by month |
 | [output/04_topic_gaps_notes.md](output/04_topic_gaps_notes.md) | Result, method, tests, limits and checks |
+| [scripts/05_levelling_off.py](scripts/05_levelling_off.py) | Whether the rise has levelled off, with its tests |
+| [output/05_levelling_off.csv](output/05_levelling_off.csv) | The yearly rises, for the total and each topic |
+| [output/05_levelling_off_monthly.csv](output/05_levelling_off_monthly.csv) | Each month, its 3-month average and the change from a year earlier |
+| [output/05_levelling_off.svg](output/05_levelling_off.svg) | Figure of women's share over time and the change from a year earlier |
+| [output/05_levelling_off_notes.md](output/05_levelling_off_notes.md) | Result, method, tests, limits and checks |
 | [index.html](index.html) | The website, listing the analyses |
 | `data/raw/` | The page's data files, unchanged (see below) |
 | `data/raw_openai_signals/` | OpenAI's Signals download, unchanged (see below) |
@@ -195,6 +213,8 @@ In analysis 02, the tests on made-up data stopped eight of nine bugs planted on 
 In analysis 03, the tests on made-up data stopped all ten bugs planted on purpose. A separate short script gave the same main result. A clean copy with only the script and the two data folders gave byte-identical output.
 
 In analysis 04, the tests on made-up data stopped five of six bugs planted on purpose. The sixth gives the same answer as the original code, so it is not a real bug. A separate short script gave the same main result. A clean copy with only the script and `data/raw` gave byte-identical output.
+
+In analysis 05, the tests on made-up data stopped all six bugs planted on purpose. A separate short script gave the same main result. A clean copy with only the script and `data/raw` gave byte-identical output.
 
 ## Folder context
 

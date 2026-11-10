@@ -181,3 +181,19 @@
 - Task: explain the breaks in the lines in every figure.
 - Owner: asked for a footnote saying why lines break, in all analyses.
 - Result: the figures for analyses 02 and 04 now say that a break is a month OpenAI withheld, because it does not publish a value based on fewer than 100 messages, to protect privacy. The 100-message rule is from OpenAI's data dictionary, and the privacy reason is from kiindeksen.no. Analysis 01 has no figure, and the figure for analysis 03 has no breaks. Tables are unchanged, and a clean copy gave identical output. Not uploaded.
+
+- Task: check analysis 04 and the new figure footnotes on GitHub and the live site.
+- Owner: uploaded the changed files through the GitHub web page (commits ac7d725, 96dc0be and e433c96, 2026-11-10 12:47 to 12:48).
+- Result: a fresh clone has all files in the right folders, identical to the local files. With the 9 output tables and figures deleted first, all four scripts rebuilt them byte for byte, with no unmatched numbers in analysis 01. All links on the page return 200. The live page matches the local index.html and shows card 04. This entry and .gitignore exist only locally.
+
+- Task: analysis 05, has the rise levelled off?
+- Owner: chose this analysis and approved the plan.
+- Result: wrote scripts/05_levelling_off.py, output/05_levelling_off.csv, output/05_levelling_off_monthly.csv, output/05_levelling_off.svg and output/05_levelling_off_notes.md. Added card 05 to index.html and a section to README.md. July to September averages: 39.07 % in 2024, 47.40 % in 2025, 49.50 % in 2026, so +8.33 points in the first year and +2.10 in the second. The change from a year earlier stayed between 6.57 and 8.33 points until March 2026, then fell to 2.10 by September 2026. July only and September only show the same slowdown. The slowdown is clearest in Practical guidance and Seeking information. The planned 6-month windows were dropped, because 27 months cannot give the same 6 calendar months in three years. Tests stopped all six planted bugs. A separate recalculation and a clean-copy rerun matched. data/raw is unchanged. Not uploaded. The owner has not yet gone through this script line by line.
+
+- Task: line-by-line walkthrough of scripts/05_levelling_off.py with the owner, part 1 of 2 (method, tests, data, output).
+- Owner: asked for the walkthrough.
+- Result: found a hidden risk in year_on_year. For a month without a full year before it, Python would read negative positions from the end of the list and silently compare the wrong months. The script only uses months from September 2025, so no result was wrong. Added a check that stops the script instead. Output files are unchanged.
+
+- Task: line-by-line walkthrough of scripts/05_levelling_off.py with the owner, part 2 of 2 (the figure code).
+- Owner: asked to continue.
+- Result: the 3-month average in the figure ends in the month shown, which the figure did not say, and the note said the average "peaked in March 2026" without saying it covers January to March. Added a footnote to the figure and made the note precise. The tables are unchanged, and a clean copy gave identical output. The walkthrough is finished. Not uploaded.
